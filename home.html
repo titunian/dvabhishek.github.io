@@ -1,0 +1,313 @@
+<style>
+  .name {
+    max-width: 768px; /* Changed from 100% to max-width: 768px for better layout on web */
+    color: black;
+    font-size: 22px;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-weight: 700;
+    word-wrap: break-word;
+    padding-left: 72px; /* Added left padding of 72px */
+  }
+
+  .intro {
+    max-width: 768px; /* Changed from 100% to max-width: 768px for better layout on web */
+    padding-left: 72px; /* Added left padding of 72px */
+  }
+
+  .intro-text {
+    color: black;
+    font-size: 18px;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-weight: 300;
+    word-wrap: break-word;
+  }
+
+  .underline {
+    text-decoration: underline;
+  }
+
+  .arrow {
+    width: 16px;
+    height: 16px;
+    display: inline;
+  }
+
+  .contact {
+    color: black;
+    font-size: 18px;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-weight: 300;
+    word-wrap: break-word;
+  }
+
+  .contact-link {
+    text-decoration: underline;
+  }
+
+  .contact-arrow {
+    width: 20px;
+    height: 20px;
+    display: inline;
+  }
+
+  .section-title {
+    max-width: 768px; /* Changed from 100% to max-width: 768px for better layout on web */
+    color: black;
+    font-size: 20px;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-weight: 300;
+    word-wrap: break-word;
+    padding-left: 72px; /* Added left padding of 72px */
+  }
+
+  .experience-item {
+    align-self: auto;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 8px;
+    display: flex;
+    padding-left: 72px; /* Added left padding of 72px */
+    width: 120%; /* Added width: 100% to make it fill the available width */
+  }
+
+  .experience-header {
+    align-self: stretch;
+    justify-content: space-between;
+    align-items: flex-start;
+    display: inline-flex;
+    flex-wrap: wrap;
+  }
+
+  .experience-company {
+    max-width: 768px; /* Changed from 100% to max-width: 768px for better layout on web */
+    color: black;
+    font-size: 18px;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-weight: 300;
+    word-wrap: break-word;
+  }
+
+  .experience-company-link {
+    text-decoration: underline;
+    color: black;
+  }
+
+  .experience-role {
+    max-width: 768px; /* Changed from 100% to max-width: 768px for better layout on web */
+    text-align: right;
+    color: black;
+    font-size: 16px;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-weight: 300;
+    word-wrap: break-word;
+  }
+
+  .experience-description {
+    max-width: 300px; /* Changed from 100% to max-width: 768px for better layout on web */
+    color: black;
+    font-size: 16px;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-weight: 300;
+    word-wrap: break-word;
+  }
+
+  .experience-tags {
+    max-width: 768px; /* Changed from 100% to max-width: 768px for better layout on web */
+    text-align: right;
+    color: black;
+    font-size: 16px;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-weight: 300;
+    word-wrap: break-word;
+  }
+
+  .profile-pic {
+    width: 108px;
+    height: 108px;
+    position: fixed;
+    top: 0;
+    right: 0;
+  }
+
+  .footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+     /* Added left padding of 72px */
+    right: 0;
+    text-align: left;
+    padding-left: 72px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    background: white;
+  }
+
+  .footer a {
+    color: black;
+    text-decoration: underline;
+    margin: 0 10px;
+    font-size: 16px;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-weight: 300;
+  }
+
+  /* Media query for smaller screens */
+  @media (max-width: 768px) {
+    .content-container {
+      left: 20px;
+      top: 60px;
+      gap: 40px;
+    }
+    
+    .experience-header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    .experience-role {
+      text-align: left;
+      margin-bottom: 4px;
+    }
+    
+    .experience-description {
+      margin-bottom: 4px;
+      text-size-adjust: 75%;
+    }
+    
+    .experience-tags {
+      /* Hiding the experience tags on smaller screens to improve layout */
+      display: none;  
+    }
+    
+    .profile-pic {
+      position: static;
+      margin-top: 20px;
+      padding-left: 20px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .footer {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    /* Reduce left padding to 20px and add 20px right padding on mobile devices */
+    .name, .intro, .section-title, .experience-item {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+</style>
+
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<div class="main-container">
+    <div class="content-container">
+      <img class="profile-pic" src="Ab.jpg" />
+      <div style="height: 50px;"></div>
+        <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 36px; display: flex">
+            <div class="name">Abhishek Damodara</div>
+            <div style="max-width: 768px; justify-content: space-between; align-items: flex-start; display: inline-flex; flex-wrap: wrap;">
+                <div class="intro" style="max-width: 768px;"><span class="intro-text">Hello.        I'm the co-founder of </span><span class="intro-text underline">Paxa</span><img src="arrow-up-right.svg" class="arrow"/><span class="intro-text"> -                  a healthcare SaaS co.         Paxa provides a complete suite needed to run a healthcare service, </span><span class="intro-text underline">get in touch</span><img src="arrow-up-right.svg" class="arrow"/><span class="intro-text"> if you want to partner with us.<br/><br/></span></div>
+                <div class="intro" style="max-width: 768px;"><span class="intro-text">I also help early startups and founders, design great products. I usually work on 1-2 projects a year, get in </span><span class="intro-text underline">touch</span><img src="arrow-up-right.svg" class="arrow"/><span class="intro-text"> if you are a founder and design is something that's bothering you.</span></div>
+            </div>
+            <!-- <div style="max-width: 768px; justify-content: space-between; align-items: flex-start; display: inline-flex">
+                <div><span class="contact">Meet me </span><span class="contact contact-link">here</span><img src="arrow-up-right.svg" class="contact-arrow"/></div>
+                <div><span class="contact"> and </span><span class="contact contact-link">here</span><img src="arrow-up-right.svg" class="contact-arrow"/><span class="contact">.</span></div>
+            </div> -->
+        </div>
+        <div style="height: 50px;"></div>
+        <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 36px; display: flex">
+            <div class="section-title">Work Experience</div>
+            <div style="max-width: 768px; flex-direction: column; justify-content: space-between; align-items: flex-start; display: flex">
+                <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 24px; display: flex">
+                    <div class="experience-item">
+                        <div class="experience-header">
+                            <div class="experience-company"><a href="https://paxa.health" target="_blank" class="experience-company-link">Paxa</a><img src="arrow-up-right.svg" class="arrow"/></div>
+                            <div class="experience-role">Co-founder and Designer</div>
+                        </div>
+                        <div style="align-self: stretch; justify-content: space-between; align-items: flex-start; display: inline-flex">
+                            <div class="experience-description">Platform to help clinical teams monitor, engage and retain their patients</div>
+                            <div class="experience-tags">B2B, SaaS, Healthcare</div>
+                        </div>
+                    </div>
+                    <div class="experience-item">
+                        <div class="experience-header">
+                            <div class="experience-company"><a href="https://unacademy.com" target="_blank" class="experience-company-link">Unacademy</a><img src="arrow-up-right.svg" class="arrow"/></div>
+                            <div class="experience-role">Director of Design</div>
+                        </div>
+                        <div style="align-self: stretch; justify-content: space-between; align-items: flex-start; display: inline-flex">
+                            <div class="experience-description">Ed-tech unicorn. Worked on experimental projects including Unacademy Icons.</div>
+                            <div class="experience-tags">B2B, SaaS, Edtech</div>
+                        </div>
+                    </div>
+                    <div class="experience-item">
+                        <div class="experience-header">
+                            <div class="experience-company"><a href="https://graphy.com" target="_blank" class="experience-company-link">Graphy by Unacademy</a><img src="arrow-up-right.svg" class="arrow"/></div>
+                            <div class="experience-role">Head of Design</div>
+                        </div>
+                        <div style="align-self: stretch; justify-content: space-between; align-items: flex-start; display: inline-flex">
+                            <div class="experience-description">Platform to help clinical teams monitor, engage and retain their patients</div>
+                            <div class="experience-tags">B2B, SaaS, Live Streaming</div>
+                        </div>
+                    </div>
+                    <div class="experience-item">
+                        <div class="experience-header">
+                            <div class="experience-company"><a href="https://clear.in" target="_blank" class="experience-company-link">Clear (YC '14)</a><img src="arrow-up-right.svg" class="arrow"/></div>
+                            <div class="experience-role">Product and Design Manager</div>
+                        </div>
+                        <div style="align-self: stretch; justify-content: space-between; align-items: flex-start; display: inline-flex">
+                            <div class="experience-description">Formerly known as Cleartax. Lead the product and design charter for ClearOne - invoicing app for SMEs.</div>
+                            <div class="experience-tags">B2B, SaaS, Finance</div>
+                        </div>
+                    </div>
+                    <div class="experience-item">
+                        <div class="experience-header">
+                            <div class="experience-company">Dose FM (exited)</div>
+                            <div class="experience-role">Founder and Designer</div>
+                        </div>
+                        <div style="align-self: stretch; justify-content: space-between; align-items: flex-start; display: inline-flex">
+                            <div class="experience-description">Platform to help clinical teams monitor, engage and retain their patients</div>
+                            <div class="experience-tags">B2C, Audio, Live Streaming</div>
+                        </div>
+                    </div>
+                    <div class="experience-item">
+                        <div class="experience-header">
+                            <div class="experience-company"><a href="https://wazirx.com" target="_blank" class="experience-company-link">WazirX</a><img src="arrow-up-right.svg" class="arrow"/></div>
+                            <div class="experience-role">Mobile Product Designer</div>
+                        </div>
+                        <div style="align-self: stretch; justify-content: space-between; align-items: flex-start; display: inline-flex">
+                            <div class="experience-description">India's largest and most trusted crypto-currency trading platform</div>
+                            <div class="experience-tags">B2C, Finance, Web3</div>
+                        </div>
+                    </div>
+                    <div class="experience-item">
+                        <div class="experience-header">
+                            <div class="experience-company"><a href="https://cropbytes.com" target="_blank" class="experience-company-link">CropBytes</a><img src="arrow-up-right.svg" class="arrow"/></div>
+                            <div class="experience-role">Design and Product Consulting</div>
+                        </div>
+                        <div style="align-self: stretch; justify-content: space-between; align-items: flex-start; display: inline-flex">
+                            <div class="experience-description">Farmville-style Web3 game built on TRON and Polygon.</div>
+                            <div class="experience-tags">B2C, Web3, Gaming</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Adding some whitespace at the end of the list -->
+                    <div style="height: 50px;"></div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <!-- Add footer with links -->
+    <div class="footer">
+      <a href="https://www.linkedin.com/in/dvabhishek/" target="_blank">LinkedIn</a>
+      <a href="https://twitter.com/dvabhishek" target="_blank">X (Twitter)</a>
+      <a href="mailto:abhishek@paxa.health">Email</a>
+      <a href="https://galaxybrain.in" target="_blank">Notes</a>
+    </div>
+</div>
